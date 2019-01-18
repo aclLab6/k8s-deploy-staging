@@ -82,8 +82,8 @@ pipeline {
         {
           container('jmeter') {
             script {
-              // def status = executeJMeter (
-                def status = 0 (
+               def status = executeJMeter (
+              //  def status = 0 (
                 scriptName: "jmeter/front-end_e2e_load.jmx",
                 resultsDir: "e2eCheck_${env.APP_NAME}",
                 serverUrl: "front-end.staging",
